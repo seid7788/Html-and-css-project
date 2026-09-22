@@ -1,0 +1,249 @@
+```html
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mənim Saytım</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            background: #111827;
+            color: white;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #0f172a, #2563eb);
+            color: white;
+            padding: 30px;
+        }
+
+        .hero-text {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: translateY(-3px);
+        }
+
+        /* Xidmətlər */
+        .services {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 35px;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Telefon */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Menyu -->
+    <header>
+        <nav>
+            <h2>Mənim Saytım</h2>
+
+            <ul>
+                <li><a href="#">Ana səhifə</a></li>
+                <li><a href="#">Haqqımızda</a></li>
+                <li><a href="#">Xidmətlər</a></li>
+                <li><a href="#">Əlaqə</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Əsas hissə -->
+    <main>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Veb səhifəmə xoş gəlmisiniz!</h1>
+
+                <p>
+                    HTML və CSS istifadə edərək hazırlanmış
+                    müasir və sadə veb səhifə.
+                </p>
+
+                <a href="#" class="btn">Daha çox</a>
+            </div>
+        </section>
+
+        <!-- Xidmətlər -->
+        <section class="services">
+
+            <h2>Xidmətlərimiz</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Web Dizayn</h3>
+                    <p>
+                        Müasir və istifadəçi dostu veb dizaynlar
+                        hazırlayırıq.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>
+                        Səliqəli və strukturlaşdırılmış HTML
+                        səhifələri yaradırıq.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>
+                        Səhifələri gözəl, sürətli və responsive
+                        şəkildə dizayn edirik.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Mənim Saytım. Bütün hüquqlar qorunur.</p>
+    </footer>
+
+</body>
+</html>
+```
